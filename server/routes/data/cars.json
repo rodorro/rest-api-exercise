@@ -34,5 +34,17 @@
         "name": "Green Roaster",
         "brand": "HMI",
         "year_release": "1976"
+    },
+    {
+        "car_id": 62,
+        "name": "aaa",
+        "brand": "sss",
+        "year_release": "1234"
+    },
+    {
+        "car_id": 63,
+        "name": "Prueba",
+        "brand": "sss",
+        "year_release": "1980"
     }
 ]

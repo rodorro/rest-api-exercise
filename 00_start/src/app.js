@@ -5,11 +5,12 @@ import {
     retrieveCarForm,
     cleanTable,
 } from './uiHelpers';
-import { 
-   getAllCars,
-   getCarById,
-   addCar 
-} from './API/carsApi.double';
+import {
+    getAllCars,
+    getCarById,
+    addCar,
+    updateCar
+} from './API/carsApi';
 
 document.addEventListener('DOMContentLoaded', () => {
     const buttonLoadCars = document.getElementById('loadcars');
@@ -42,5 +43,5 @@ document.addEventListener('DOMContentLoaded', () => {
             .then((result) => {
                 addCarRows(result, 'cars-table');
             });
-    });
+    });   
 });
