@@ -8,8 +8,7 @@ import {
 import {
     getAllCars,
     getCarById,
-    addCar,
-    updateCar
+    addCar
 } from './API/carsApi';
 
 document.addEventListener('DOMContentLoaded', () => {
