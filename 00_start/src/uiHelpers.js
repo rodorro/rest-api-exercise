@@ -50,3 +50,9 @@ export const retrieveCarForm = () => {
 export const retrieveCarId = () => {
     return +document.getElementById('carid').value;
 }
+
+export const cleanEditCarForm = () => {
+    document.getElementById('name').value = "";
+    document.getElementById('brand').value = "";
+    document.getElementById('year').value = "";
+}

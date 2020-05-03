@@ -81,9 +81,8 @@ router.route('/:id')
     .put((req, res) => {
         var data = getCarData();
         var matchingCar = data.find(
-            (item) => item.car_id === req.params.id
+            (item) => item.car_id === +req.params.id
         );
-
         if(!matchingCar) {
             res.sendStatus(404);
         } else {
@@ -92,8 +91,7 @@ router.route('/:id')
             matchingCar.year_release = req.body.year_release;
 
             saveCarData(data);
-            res.sendStatus(204);
-            res.send(matchingCar);
+            res.status(204).send(matchingCar);
         }
     });
 
